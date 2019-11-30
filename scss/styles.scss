@@ -241,20 +241,21 @@ body {
 }
 
 .about {
-    min-height: 40vh;
+    min-height: 50vh;
     background: #333;
-    padding: 20px 0;
+    padding: 60px 0 20px 0;
     display: flex;
     align-items: center;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 3.6rem;
         font-family: 'Aleo', sans-serif;
         h3 {
             display: inline-block;
             margin: 20px 10px;
+            font-weight: 400;
+            font-size: 3.6rem;
         }
         div {
             margin: 20px 2%;
@@ -393,5 +394,27 @@ body {
                 color: #5474fd;
             }
         }
+    }
+}
+
+.arc {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-51%, -30%);
+        width: 70%;
+        background-image: url(../img/arc.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    svg {
+        padding: 20px;
+        background-color: #333;
+        z-index: 0;
     }
 }
